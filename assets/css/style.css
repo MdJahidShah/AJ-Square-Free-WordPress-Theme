@@ -1,0 +1,537 @@
+/* Bootstrap Overrides */
+/* Customize as per your design */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+section.main-wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section.main-wrap-head {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap {
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+main {
+    background: #222222;
+    background-image: url(https://cdn.prod.website-files.com/6490d0ac19d07cceda7652d8/64caf89d4b6172cb9bb4330f_net-blur-left-right-full.png),url(https://cdn.prod.website-files.com/6490d0ac19d07cceda7652d8/66ab9f2b3fbcf8004c8f772a_bg_bggenerator_com.png);
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .site-branding h1 {
+    margin: 0;
+}
+header .site-branding a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Custom CSS for sticky navbar */
+.navbar.sticky-top {
+
+}
+/* Custom CSS for navbar */
+.navbar {
+    transition: background-color 0.3s ease;
+    width: 99%;
+    margin: 0 auto;
+}
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    padding: 0;
+}
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+.nav-container {
+	display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+section.main_wrap.mnavbg {
+    display: none;
+}
+.aj-square-logo {
+    width: 20%;
+    float: left;
+}
+.aj-square-logo a {
+    color: #ff6e00;
+    text-decoration: none;
+    /* text-shadow: 1px 1px #efefef; */
+    font-weight: bold;
+}
+span.site-title {
+    font-size: 30px;
+}
+
+div#navbarSupportedContent {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-collapse li {
+    list-style-type: none;
+}
+.navbar-collapse li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-collapse li a:hover,a#searchIcon:hover {
+    color: #ff6e00;
+}
+a#searchIcon {
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    position: relative;
+}
+
+div#myLinks a {
+    color: #fff;
+    text-decoration: none;
+}
+#searchForm {
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease, display 0s ease 0.5s;
+    position: absolute;
+    top: 122%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 5px 10px;
+    z-index: 9999;
+    background: #dbdbdb;
+}
+#searchForm.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-field {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-submit {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+div#myLinks li {
+    list-style-type: none;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.menu ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Button CSS for navbar Left  start*/
+.custom-header-widget .wp-block-button__link {
+    background: #72f1ed;
+}
+.header-widget-container {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-header-widget {
+    margin: 0 0 0 25px;
+}
+.custom-header-widget a {
+    text-decoration: none;
+    color: #e2e2e2;
+}
+.custom-header-widget:hover a {
+    color: #ffffff;
+}
+.custom-header-widget .wp-block-button__link:hover {
+    background: #fff;
+}
+
+/* Ensure the navbar collapse is hidden by default */
+#navbarSupportedContent {
+    display: none;
+}
+
+/* Show the navbar collapse when the .show class is added */
+#navbarSupportedContent.show {
+    display: block;
+}
+
+/* Styling for the search form */
+.nav-search {
+    position: relative;
+}
+
+button.navbar-toggler {
+    display: none;
+}
+.navbar-collapse ul {
+    /*background: #383838;*/
+    padding: 10px 0;
+}
+/* Custom CSS for navbar  end*/
+
+/*content css start*/
+.main_wrap.aj-square-content-search {
+    width: 100%;
+    overflow: hidden;
+}
+div#aj-square-content {
+    width: 67.667%;
+    float: left;
+    overflow: hidden;
+}
+/* Ensure dropdown displays fully below the nav item */
+.navbar-nav .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    min-width: 200px;
+    z-index: 1000;
+    background-color: #fff; /* Ensure visibility */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+/* Show dropdown fully on hover */
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    background-color: #333333;
+}
+/* Disable hover and focus background color */
+.dropdown-item:focus, 
+.dropdown-item:hover {
+    background-color: transparent !important;
+}
+/* Fix container cutting off dropdown */
+.navbar {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 1050; /* Ensure it's above other elements */
+}
+/* Fix Bootstrap conflict with sticky-top */
+.navbar.sticky-top {
+    overflow: visible !important;
+}
+/* Fix Bootstrap's collapse container if needed */
+.navbar-collapse {
+    overflow: visible !important;
+}
+ul.dropdown-menu li {
+    padding: 10px 0;
+}
+/* Custom CSS for navbar  end*/
+
+/*content css start*/
+.main_wrap.aj-square-content-search {
+    width: 100%;
+}
+/*content css end*/
+
+/*Article css start*/
+h1.entry-title {
+    font-size: 25px;
+}
+.entry-content p {
+    padding: 0 3%;
+    text-align: justify;
+}
+.featured_image img {
+    width: 100%;
+    height: auto;
+}
+/*Article css end*/
+
+/*Sidebar css start*/
+div#sidebar li {
+    list-style-type: none;
+    background: #ccc;
+    margin-bottom: 1px;
+}
+#sidebar h2 {
+    padding: 5px 20px;
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-underline-offset: 7px;
+}
+#secondary {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.widget {
+    margin-bottom:0px;
+}
+
+.widget-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.widget.widget_block {
+    background: #ccc;
+}
+div#sidebar,aside#sidebar {
+    width: 32.333%;
+    float: left;
+}
+#sidebar ul {
+    padding: 0 5%;
+}
+.sidebar-main {
+    padding: 0 5px;
+}
+#sidebar li {
+    list-style-type: none;
+}
+#sidebar a {
+    text-decoration: none;
+    color: #16785d;
+}
+#sidebar a:hover {
+    text-decoration: underline;
+}
+/*Sidebar css end*/
+
+/*Archive css start*/
+
+div#aj-square-content_wrapper h3 {
+    text-align: center;
+    padding: 5% 0;
+}
+article#aj-square-article a,article#aj-square-search-article a {
+    color: #16785d;
+    text-decoration: none;
+}
+article#aj-square-article a:hover,article#aj-square-search-article a:hover {
+    text-decoration: underline;
+}
+article#aj-square-article h2, article#aj-square-search-article h2 {
+    padding: 0;
+    line-height: 20px;
+}
+article#aj-square-article h2 a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+h2.latest-post-content {
+    text-align: center;
+    text-decoration: underline;
+}
+.latest-content-item {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0 0px 15px 15px;
+}
+.latest-content-item a {
+    text-decoration: none;
+}
+.pphead {
+    text-decoration: none;
+    color: #000;
+}
+.seemore {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin: 20px 0;
+}
+.seemore a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.seemore a:hover {
+    color: #fff;
+    background: #2c2c2c;
+}
+/*Archive css end*/
+
+/*Search css Start*/
+article#aj-square-search-article img {
+    width: 100%;
+}
+article#aj-square-search-article {
+    padding: 1% 0;
+    box-shadow: 1px 1px 1px #ccc;
+}
+article#aj-square-search-article {
+    box-shadow: 1px 1px 1px #ccc;
+    background: #e7e7e7;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+div#aj-square-content h4 {
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+}
+a#searchIcon span {
+    display: none;
+}
+/*Search css end*/
+
+/*Footer css start*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.upper-footer {
+    background-color: #f8f9fa; /* Light Gray */
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer Css End */
+
+@media (max-width: 991.98px) {
+    header{position: relative;}
+    div#aj-square-content {
+        width: 100%;
+    }
+    div#sidebar {
+        width: 100%;
+    }
+    article#aj-square-search-article img {
+        height: 100%;
+    }
+    section.main-wrap.wrap-desk {
+        display: none;
+    }
+    section.main_wrap.mnavbg {
+        display: block;
+    }
+    span.site-title {
+        border: 1px solid;
+        padding: 5px;
+    }
+    .navbar .navbar-nav {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    div#searchForm {
+        top: 92%;
+    }
+    .search-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    form.search-form label {
+        width: 98%;
+    }
+    button.navbar-toggler {
+        display: block;
+    }
+    div#navbarSupportedContent {
+        display: none;
+    }
+    .navbar-collapse li {
+        padding: 5px 0;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .header-widget-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .custom-header-widget {
+        margin: 0 0 35px 0;
+    }
+}
+
+/*-------------------------------------------------------
+				@media screen 650px Start
+---------------------------------------------------------*/
+@media screen and (max-width: 650px) {
+    header {position: relative;}
+
+}
+
+
+/* Custom Styles */
+/* Add your custom CSS styles here */
