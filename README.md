@@ -1,6 +1,6 @@
 # AJ Square WordPress Theme
 
-AJ Square is a customizable WordPress theme designed for [describe your theme's purpose or target audience].
+AJ Square is a customizable WordPress theme designed for Blog, Small eCommerce website.
 
 ## Features
 
