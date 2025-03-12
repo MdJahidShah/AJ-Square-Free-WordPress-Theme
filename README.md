@@ -48,4 +48,4 @@ For support and issues, please visit [GitHub Issues](https://github.com/mdjahids
 ## Author
 
 Md Jahid Shah  
-Website: [https://jahidshah.sscholarscenter.com/](https://jahidshah.sscholarscenter.com/)
+Website: [https://jahidshah.com/](https://jahidshah.com/)
