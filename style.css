@@ -1,8 +1,8 @@
 /*
 Theme Name: AJ Square
-Theme URI: https://jahidshah.sscholarscenter.com/
+Theme URI: https://github.com/MdJahidShah/AJ-Square-Free-WordPress-Theme
 Author: Md Jahid Shah
-Author URI: https://jahidshah.sscholarscenter.com/
+Author URI: https://jahidshah.com/
 Description: A custom WordPress theme compatible with Elementor and Bootstrap 5.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -21,9 +21,13 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: #fff;
+    color: #020202;
+    padding: 0.1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
 }
 
 header .site-branding h1 {
@@ -33,6 +37,10 @@ header .site-branding h1 {
 header .site-branding a {
     color: #fff;
     text-decoration: none;
+}
+
+header.header-hidden {
+    top: -117px;
 }
 
 footer {
